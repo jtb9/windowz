@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson Text');
+
+.windowz {
+    font-family: 'Crimson Text';
+}
+
+.windowz-frame {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 10;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.windowz-title-move {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: move;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 3px;
+    background-color: rgb(150, 150, 150);
+}
+
+.windowz-title-move svg {
+    position: relative;
+    top: 2px;
+    left: 1px;
+}
+
+.windowz-frame-title {
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    background: rgb(240,240,240);
+    background: linear-gradient(162deg, rgba(240,240,240,1) 0%, rgba(226,226,226,1) 100%);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.windowz-title-controls {
+    align-self: flex-end;
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+
+.windowz-title-controls svg:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+.windowz-frame-title-name {
+    line-height: 35px;
+    padding-left: 10px;
+}
+
+.windowz-frame-body {
+    padding: 5px;
+    background-color: rgb(253, 253, 253);
+    flex: 1;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    overflow-y: scroll;
+}
+
+.windowz-progress {
+    height: 40px;
+    width: 100%;
+}
+
+.windowz-progress-fill {
+    background-color: green;
+    height: 40px;
+    position: absolute;
+}
+
+.windowz-progress-fill-backdrop {
+    background-color: black;
+    height: 40px;
+}
+
+.windowz-frame-controls {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    height: 25px;
+}
